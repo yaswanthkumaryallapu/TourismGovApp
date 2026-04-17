@@ -1,0 +1,86 @@
+package com.cognizant.user.service;
+
+import java.time.LocalDateTime;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+import com.tourismgov.dto.AuditLogResponse;
+import com.tourismgov.model.AuditLog;
+import com.tourismgov.repository.AuditLogRepository;
+import com.tourismgov.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+@Transactional(readOnly = true)
+@Service
+@RequiredArgsConstructor
+@Slf4j
+@Transactional(readOnly = true)
+public class AuditLogServiceImpl implements AuditLogService {
+
+    private final AuditLogRepository auditLogRepository;
+    private final UserRepository userRepository;
+
+    /**
+     * Used when audit logging must not affect business transaction
+     */
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void logAction(Long userId, String action, String resource, String status) {
+
+        if (userId == null) {
+            log.warn("Audit skipped – userId is null");
+            return;
+        }
+
+        User user = userRepository.findById(userId)
+            .orElseThrow(() -> new IllegalArgumentException("Invalid userId: " + userId));
+
+        AuditLog logEntry = AuditLog.builder()
+            .user(user)
+            .action(action)
+            .resource(resource)
+            .status(status)
+            .build();
+
+        auditLogRepository.save(logEntry);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getAllLogs(Pageable pageable) {
+        return auditLogRepository.findAll(pageable).map(this::toResponse);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getLogsByUserId(Long userId, Pageable pageable) {
+        return auditLogRepository.findByUser_UserId(userId, pageable).map(this::toResponse);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getLogsByAction(String action, Pageable pageable) {
+        return auditLogRepository.findByAction(action, pageable).map(this::toResponse);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getLogsByDateRange(
+            LocalDateTime start, LocalDateTime end, Pageable pageable) {
+        return auditLogRepository.findByTimestampBetween(start, end, pageable)
+                .map(this::toResponse);
+    }
+
+    private AuditLogResponse toResponse(AuditLog log) {
+        return AuditLogResponse.builder()
+            .auditId(log.getAuditId())
+            .userId(log.getUser().getUserId())
+            .action(log.getAction())
+            .resource(log.getResource())
+            .status(log.getStatus())
+            .timestamp(log.getTimestamp())
+            .build();
+    }
+}

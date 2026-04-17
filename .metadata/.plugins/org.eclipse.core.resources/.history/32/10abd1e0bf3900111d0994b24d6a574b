@@ -1,0 +1,11 @@
+spring.application.name=UserService
+
+server.port=8282
+spring.web.error.include-message=always
+
+spring.datasource.url=jdbc:mysql://localhost:3306/UserDB?createDatabaseIfNotExist=true
+
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.config.import = optional:configserver:http://localhost:8181
+security.jwt.secret=edbffb6c928b3a200fb99183db09e8a45132910b7aade3857ccac1974e3b41972ad77526672aac43fdf799851d0f9b746734ab0a47a3c6319603d02357905f1d

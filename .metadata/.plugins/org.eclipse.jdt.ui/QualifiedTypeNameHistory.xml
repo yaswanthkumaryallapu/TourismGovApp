@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.NotNull"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="com.cognizant.user.enums.Role"/>
+    <fullyQualifiedTypeName name="com.cognizant.user.enums.Status"/>
+    <fullyQualifiedTypeName name="com.cognizant.user.entity.User"/>
+    <fullyQualifiedTypeName name="com.cognizant.user.security.SecurityUtils"/>
+</qualifiedTypeNameHistroy>

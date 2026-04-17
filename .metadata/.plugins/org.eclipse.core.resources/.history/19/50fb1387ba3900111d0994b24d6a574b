@@ -1,0 +1,76 @@
+package com.cognizant.user.security;
+
+import java.security.Key;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Function;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
+
+@Component
+public class JwtUtil {
+
+    // ✅ Use env variable / secret manager in prod
+    private static final String JWT_SECRET_KEY =
+            "bAW23OfGJzdzDw6XmZrCvxUrAWe1DjhOLvYUY7jMDqT";
+
+    private static final long JWT_EXPIRATION_MS = 86400000; // 24 hours
+
+    private Key getSigningKey() {
+        return Keys.hmacShaKeyFor(JWT_SECRET_KEY.getBytes());
+    }
+
+    /* ================= TOKEN GENERATION (AUTH SERVICE ONLY) ================= */
+
+    public String generateToken(UserDetails userDetails) {
+
+        Map<String, Object> claims = new HashMap<>();
+
+        // ✅ Store roles in token
+        claims.put(
+            "roles",
+            userDetails.getAuthorities()
+                       .stream()
+                       .map(GrantedAuthority::getAuthority)
+                       .toList()
+        );
+
+        return Jwts.builder()
+                .setClaims(claims)
+                .setSubject(userDetails.getUsername()) // email
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + JWT_EXPIRATION_MS))
+                .signWith(getSigningKey(), SignatureAlgorithm.HS256)
+                .compact();
+    }
+
+    /* ================= TOKEN VALIDATION (USED BY ALL SERVICES) ================= */
+
+    public String extractUsername(String token) {
+        return extractClaim(token, Claims::getSubject);
+    }
+
+    public <T> T extractClaim(String token, Function<Claims, T> resolver) {
+        Claims claims = Jwts.parserBuilder()
+                .setSigningKey(getSigningKey())
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
+        return resolver.apply(claims);
+    }
+
+    public boolean validateToken(String token, UserDetails userDetails) {
+        String username = extractUsername(token);
+        Date expiration = extractClaim(token, Claims::getExpiration);
+        return username.equals(userDetails.getUsername())
+                && expiration.after(new Date());
+    }
+}

@@ -1,0 +1,120 @@
+package com.cognizant.user.service;
+
+import java.time.LocalDateTime;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.cognizant.user.dto.AuditLogResponse;
+import com.cognizant.user.entity.AuditLog;
+import com.cognizant.user.entity.User;
+import com.cognizant.user.repository.AuditLogRepository;
+import com.cognizant.user.repository.UserRepository;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+@Transactional(readOnly = true)
+public class AuditLogServiceImpl implements AuditLogService {
+
+    private final AuditLogRepository auditLogRepository;
+    private final UserRepository userRepository;
+
+    /**
+     * Security / system audits – must survive rollback
+     */
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void logAction(
+            Long userId,
+            String action,
+            String resource,
+            String status) {
+
+        if (userId == null) {
+            log.warn("Audit skipped – userId is null");
+            return;
+        }
+
+        User user = userRepository.findById(userId)
+                .orElseThrow(() ->
+                        new IllegalArgumentException("Invalid userId for audit: " + userId));
+
+        AuditLog auditLog = AuditLog.builder()
+                .user(user)
+                .action(action)
+                .resource(resource)
+                .status(status)
+                .build();
+
+        auditLogRepository.save(auditLog);
+    }
+
+    /**
+     * Business audits – must rollback with main transaction
+     */
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public void logActionInCurrentTransaction(
+            Long userId,
+            String action,
+            String resource,
+            String status) {
+
+        if (userId == null) {
+            log.warn("Audit skipped – userId is null for action {}", action);
+            return;
+        }
+
+        User user = userRepository.findById(userId)
+                .orElseThrow(() ->
+                        new IllegalArgumentException("Invalid userId for audit: " + userId));
+
+        AuditLog auditLog = AuditLog.builder()
+                .user(user)
+                .action(action)
+                .resource(resource)
+                .status(status)
+                .build();
+
+        auditLogRepository.save(auditLog);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getAllLogs(Pageable pageable) {
+        return auditLogRepository.findAll(pageable)
+                .map(this::toResponse);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getLogsByUserId(Long userId, Pageable pageable) {
+        return auditLogRepository.findByUser_UserId(userId, pageable)
+                .map(this::toResponse);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getLogsByAction(String action, Pageable pageable) {
+        return auditLogRepository.findByAction(action, pageable)
+                .map(this::toResponse);
+    }
+
+    @Override
+    public Page<AuditLogResponse> getLogsByDateRange(
+            LocalDateTime start,
+            LocalDateTime end,
+            Pageable pageable) {
+
+        return auditLogRepository
+                .findByTimestampBetween(start, end, pageable)
+                .map(this::toResponse);
+    }
+
+    // ✅ MAPPER MUST BE PRIVATE
+    private AuditLogResponse toResponse(AuditLog log) {
+        return AuditLogResponse.builder()

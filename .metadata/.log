@@ -1,0 +1,418 @@
+!SESSION 2026-04-16 17:16:27.212 -----------------------------------------------
+eclipse.buildId=4.37.0.202509051843
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file C:\Users\2481563\Downloads\Tourism Government Application\.metadata\.bak_1.log
+Created Time: 2026-04-16 23:45:37.956
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-04-16 23:45:37.957
+!MESSAGE Plugin is modifying compileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addCompileSourceRoot()/removeCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-04-16 23:45:37.960
+!MESSAGE Plugin is modifying testCompileSourceRoots through clear(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-04-16 23:45:37.964
+!MESSAGE Plugin is modifying testCompileSourceRoots through add(), which will not work in Maven 4.0.0. Use MavenProject.addTestCompileSourceRoot()/removeTestCompileSourceRoot() methods instead. If using a plugin, please upgrade to the latest version or report the issue to the plugin maintainer. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:45:38.645
+!MESSAGE 23:45:35.388 [Simple-Language-Server main thread] INFO  o.s.i.v.boot.app.SpringSymbolIndex - Update document [file changed]: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:45:38.647
+!MESSAGE 23:45:35.940 [pool-2-thread-508] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:45:52.726
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:45:52.728
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:45:52.816
+!MESSAGE [Info] Document is null for editor: SecurityConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:45:52.818
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/SecurityConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:45:52.946
+!MESSAGE [Info] Document is null for editor: JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:45:52.948
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:47:37.685
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:47:37.687
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:36.830
+!MESSAGE 23:45:52.787 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:36.834
+!MESSAGE 23:47:37.692 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:36.878
+!MESSAGE 23:48:36.874 [pool-4-thread-67] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:37.055
+!MESSAGE 23:48:36.904 [pool-2-thread-511] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: end work on AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:37.056
+!MESSAGE 23:48:37.054 [pool-2-thread-511] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:38.146
+!MESSAGE 23:48:37.284 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:39.669
+!MESSAGE 23:48:38.696 [pool-2-thread-511] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:48:39.671
+!MESSAGE 23:48:38.711 [pool-2-thread-513] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: end work on AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:15.863
+!MESSAGE 23:48:39.675 [pool-2-thread-511] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:50:20.436
+!MESSAGE [Info] Document is null for editor: JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:50:20.439
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/java/com/cognizant/user/security/JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:50:20.539
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:50:20.541
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/EurekaServer/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:50:20.766
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-16 23:50:20.770
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/ConfigServer/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:20.848
+!MESSAGE 23:50:20.844 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - Closed: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/ConfigServer/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:28.141
+!MESSAGE 23:50:28.107 [JMX client heartbeat 3] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorService - Disconnect from process: service:jmx:rmi:///jndi/rmi://127.0.0.1:57604/jmxrmi - retry no: 0
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.198
+!MESSAGE 23:50:34.175 [JMX client heartbeat 4] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorService - Disconnect from process: service:jmx:rmi:///jndi/rmi://127.0.0.1:57640/jmxrmi - retry no: 0
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.872
+!MESSAGE geProducer.java:194)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.874
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.876
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.879
+!MESSAGE 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.881
+!MESSAGE 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.882
+!MESSAGE 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.884
+!MESSAGE 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.886
+!MESSAGE 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.891
+!MESSAGE Caused by: java.lang.IllegalStateException: Live Data is not yet available!
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.895
+!MESSAGE 	at org.springframework.ide.vscode.boot.java.livehover.v2.SpringProcessCommandHandler.handleLiveProcessRequest(SpringProcessCommandHandler.java:330)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.896
+!MESSAGE 	at org.springframework.ide.vscode.boot.java.livehover.v2.SpringProcessCommandHandler.lambda$new$4(SpringProcessCommandHandler.java:81)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.898
+!MESSAGE 	at org.springframework.ide.vscode.commons.languageserver.util.SimpleLanguageServer.executeCommand(SimpleLanguageServer.java:313)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.899
+!MESSAGE 	at org.springframework.ide.vscode.commons.languageserver.util.SimpleWorkspaceService.executeCommand(SimpleWorkspaceService.java:157)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.901
+!MESSAGE 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.903
+!MESSAGE 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.905
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.907
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.908
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:50:34.911
+!MESSAGE 	... 10 common frames omitted
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-16 23:51:30.352
+!MESSAGE 23:50:40.945 [pool-13-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorService - Connecting to process: service:jmx:rmi:///jndi/rmi://127.0.0.1:49705/jmxrmi - retry no: 0
+!SESSION 2026-04-17 08:50:32.415 -----------------------------------------------
+eclipse.buildId=4.37.0.202509051843
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2026-04-17 08:50:59.213
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-04-17 08:58:17.698
+!MESSAGE Logback config file: C:\Users\2481563\Downloads\Tourism Government Application\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.ui 2 0 2026-04-17 08:58:19.230
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-04-17 08:58:19.230
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-04-17 08:58:20.319
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-04-17 08:58:20.321
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 08:58:52.045
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 08:58:52.086
+!MESSAGE [Info] Found native binary in fragment bundle: com.microsoft.copilot.eclipse.core.agent.win32
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-04-17 08:58:53.032
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\2481563'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 08:58:54.693
+!MESSAGE [Info] Binary agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:03.982
+!MESSAGE 08:59:03.961 [Simple-Language-Server main thread] INFO  o.s.i.v.boot.app.SpringSymbolIndex - update settings of spring indexer - done
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:03.985
+!MESSAGE 08:59:03.985 [Simple-Language-Server main thread] INFO  o.s.i.v.b.j.BootJavaLanguageServerComponents - update live process tracker settings - done
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-04-17 08:59:09.878
+!MESSAGE [LS:GitHub Copilot Language Server][Info]	[lsp] GitHub Copilot Language Server 1.457.0 initialized
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-04-17 08:59:11.189
+!MESSAGE [LS:GitHub Copilot Language Server][Warning]	[McpAutoApproveService] Invalid McpAutoApproveService config, resetting to empty undefined
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-04-17 08:59:11.193
+!MESSAGE [LS:GitHub Copilot Language Server][Info]	[certificates] Removed 7 expired certificates
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-04-17 08:59:11.286
+!MESSAGE [LS:GitHub Copilot Language Server][Info]	[default] Policy watcher started for GitHub Copilot Plugin
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-04-17 08:59:11.296
+!MESSAGE [LS:GitHub Copilot Language Server][Info]	[GithubAvailableEmbeddingTypes] Could not find any available embedding types. Error: noSession
+
+!ENTRY com.microsoft.copilot.eclipse.terminal.api 2 0 2026-04-17 08:59:11.566
+!MESSAGE Terminal dependencies not available. User needs to install them manually.
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-04-17 08:59:11.688
+!MESSAGE [LS:GitHub Copilot Language Server][Warning]	[McpAutoApproveService] Invalid McpAutoApproveService config, resetting to empty undefined
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:13.548
+!MESSAGE 08:59:13.545 [pool-5-thread-1] INFO  o.s.i.v.b.j.utils.SpringIndexerJava - reconciling stats - counter: 1
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:13.581
+!MESSAGE 08:59:13.574 [pool-5-thread-1] INFO  o.s.i.v.b.j.u.SpringFactoriesIndexer - scan factories files for symbols for project: EventBookingService took ms: 29
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:13.837
+!MESSAGE 08:59:13.833 [pool-5-thread-1] INFO  o.s.i.v.b.j.utils.SpringIndexerJava - scan java files restored cached dependency data: 0 - no. of cached dependencies: {}
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:13.859
+!MESSAGE 08:59:13.854 [pool-5-thread-1] INFO  o.s.i.v.b.j.u.SpringFactoriesIndexer - scan factories files for symbols for project: NotificationService took ms: 18
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:14.140
+!MESSAGE 08:59:14.120 [pool-5-thread-1] INFO  o.s.i.v.b.j.utils.SpringIndexerJava - scan java files restored cached dependency data: 0 - no. of cached dependencies: {}
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:14.142
+!MESSAGE 08:59:14.123 [pool-5-thread-1] INFO  o.s.i.v.b.j.u.SpringFactoriesIndexer - scan factories files for symbols for project: ProgramService - no. of files: 0
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:14.384
+!MESSAGE 08:59:14.380 [pool-5-thread-1] INFO  o.s.i.v.b.j.utils.SpringIndexerJava - scan java files restored cached dependency data: 0 - no. of cached dependencies: {}
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:14.405
+!MESSAGE 08:59:14.400 [pool-5-thread-1] INFO  o.s.i.v.b.j.u.SpringFactoriesIndexer - scan factories files for symbols for project: ReportingService took ms: 18
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:14.644
+!MESSAGE 08:59:14.641 [pool-5-thread-1] INFO  o.s.i.v.b.j.utils.SpringIndexerJava - scan java files restored cached dependency data: 0 - no. of cached dependencies: {}
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:14.876
+!MESSAGE 08:59:14.662 [pool-5-thread-1] INFO  o.s.i.v.b.j.u.SpringFactoriesIndexer - scan factories files for symbols for project: SiteService took ms: 20
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:14.951
+!MESSAGE 08:59:14.946 [pool-5-thread-1] INFO  o.s.i.v.b.j.u.SpringFactoriesIndexer - scan factories files for symbols for project: TouristService took ms: 75
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:15.133
+!MESSAGE 08:59:15.130 [pool-5-thread-1] INFO  o.s.i.v.b.j.utils.SpringIndexerJava - scan java files restored cached dependency data: 0 - no. of cached dependencies: {}
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 08:59:15.202
+!MESSAGE 08:59:15.186 [pool-5-thread-1] INFO  o.s.i.v.b.j.u.SpringFactoriesIndexer - scan factories files for symbols for project: UserService took ms: 55
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:50.855
+!MESSAGE 08:59:15.717 [pool-5-thread-1] INFO  o.s.i.v.b.j.utils.SpringIndexerJava - reconciling stats - timer: 29
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.203
+!MESSAGE 09:01:55.198 [pool-13-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorRemote - Creating RemoteStringBootApp: RemoteBootAppData [jmxurl=service:jmx:rmi:///jndi/rmi://127.0.0.1:65044/jmxrmi, host=127.0.0.1, urlScheme=http, port=null, manualConnect=false, keepChecking=true, processId=8356, processName=com.cognizant.server.EurekaServerApplication. projectName=EurekaServer]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.363
+!MESSAGE 09:01:55.211 [pool-13-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorRemote - updating settings for remote processses to track - done
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.365
+!MESSAGE commons.languageserver.util.SimpleLanguageServer.executeCommand(SimpleLanguageServer.java:313)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.368
+!MESSAGE 	at org.springframework.ide.vscode.commons.languageserver.util.SimpleWorkspaceService.executeCommand(SimpleWorkspaceService.java:157)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.371
+!MESSAGE 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.374
+!MESSAGE 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.376
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.378
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.381
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:55.383
+!MESSAGE 	... 10 common frames omitted
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:58.844
+!MESSAGE 09:01:58.843 [pool-13-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorRemote - Creating RemoteStringBootApp: RemoteBootAppData [jmxurl=service:jmx:rmi:///jndi/rmi://127.0.0.1:65041/jmxrmi, host=127.0.0.1, urlScheme=http, port=null, manualConnect=false, keepChecking=true, processId=30936, processName=com.cognizant.server.ConfigServerApplication. projectName=ConfigServer]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:01:58.871
+!MESSAGE 09:01:58.870 [pool-6-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorService - Refreshing data from Spring process: service:jmx:rmi:///jndi/rmi://127.0.0.1:65041/jmxrmi - retry no: 0
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.139
+!MESSAGE geProducer.java:194)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.141
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.143
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.146
+!MESSAGE 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.148
+!MESSAGE 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.150
+!MESSAGE 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.152
+!MESSAGE 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.154
+!MESSAGE 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.155
+!MESSAGE Caused by: java.lang.IllegalStateException: Live Data is not yet available!
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.157
+!MESSAGE 	at org.springframework.ide.vscode.boot.java.livehover.v2.SpringProcessCommandHandler.handleLiveProcessRequest(SpringProcessCommandHandler.java:330)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.159
+!MESSAGE 	at org.springframework.ide.vscode.boot.java.livehover.v2.SpringProcessCommandHandler.lambda$new$4(SpringProcessCommandHandler.java:81)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.161
+!MESSAGE 	at org.springframework.ide.vscode.commons.languageserver.util.SimpleLanguageServer.executeCommand(SimpleLanguageServer.java:313)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.164
+!MESSAGE 	at org.springframework.ide.vscode.commons.languageserver.util.SimpleWorkspaceService.executeCommand(SimpleWorkspaceService.java:157)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.166
+!MESSAGE 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.168
+!MESSAGE 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.170
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.172
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.174
+!MESSAGE 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:02:22.176
+!MESSAGE 	... 10 common frames omitted
+
+!ENTRY org.eclipse.jface 2 0 2026-04-17 09:03:30.875
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-04-17 09:03:30.875
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:03:31.068
+!MESSAGE 09:03:30.556 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:03:36.349
+!MESSAGE 09:03:35.838 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/TouristService/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-04-17 09:04:08.210
+!MESSAGE 09:03:57.816 [Reconciler-1] INFO  o.s.i.v.b.m.SpringPropertiesIndexManager - Indexed 1425 properties.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.577
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.580
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/UserService/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.626
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.627
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/TouristService/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.666
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.668
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/EurekaServer/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.763
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-04-17 09:04:10.765
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/2481563/Downloads/Tourism%20Government%20Application/ConfigServer/src/main/resources/application.properties
