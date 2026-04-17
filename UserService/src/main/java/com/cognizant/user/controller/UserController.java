@@ -18,7 +18,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/tourismgov/v1/users")
+@RequestMapping("/tourismgov/user/users")
 @RequiredArgsConstructor
 public class UserController {
 

@@ -19,7 +19,7 @@ import com.cognizant.user.service.AuditLogService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/tourismgov/v1/audit-logs") 
+@RequestMapping("/tourismgov/user/audit-logs") 
 @RequiredArgsConstructor
 public class AuditLogController {
 
