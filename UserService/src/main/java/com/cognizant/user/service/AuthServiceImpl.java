@@ -1,6 +1,6 @@
 package com.cognizant.user.service;
 
-import static com.cognizant.user.exceptions.ErrorMessages.USER_NOT_FOUND;
+import static com.cognizant.user.exceptions.SecurityErrorMessages.USER_NOT_FOUND;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
