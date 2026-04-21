@@ -26,7 +26,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ComplianceRecord{
+public class ComplianceRecord extends BaseEntity{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

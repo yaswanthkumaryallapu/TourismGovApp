@@ -10,8 +10,8 @@ import lombok.Setter;
 @Table(name = "preservation_activities")
 @Getter
 @Setter
-@NoArgsConstructor
-public class PreservationActivity {
+@NoArgsConstructor 
+public class PreservationActivity extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
